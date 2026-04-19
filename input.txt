@@ -1,0 +1,36 @@
+[Materials]
+1 / 320000.0 / 17066666666.67 / 30.0 / 800.0 / 8e-6
+2 / 91.106 / 9589.0 / 200.0 / 30.0 / 1.2e-5
+
+[Nodes]
+# Beam nodes exactly at the 8.0m centerline
+1 / 0.0 / 8.0
+2 / 7.0 / 8.0
+3 / 16.0 / 8.0
+# Truss supports
+4 / 3.0 / 0.0
+5 / 13.0 / 0.0
+
+[Members]
+# Mem ID / Start / End / Mat ID / Type / Rel Start / Rel End / Offset Start Y / Offset End Y
+# Beam has NO offsets (it is perfectly aligned with nodes)
+1 / 1 / 2 / 1 / Frame / 0 / 0 / 0.0 / 0.0
+2 / 2 / 3 / 1 / Frame / 0 / 0 / 0.0 / 0.0
+
+# Trusses connect to Node 2 at their End. 
+# They attach at the bottom of the beam, which is 400mm below the 8.0m node.
+3 / 4 / 2 / 2 / Truss / 0 / 0 / 0.0 / -400.0
+4 / 5 / 2 / 2 / Truss / 0 / 0 / 0.0 / -400.0
+
+[Supports]
+# FIXED: Node 3 is now a Pin (1 / 1 / 0), restraining both X and Y.
+1 / 1 / 1 / 1 / 0.0 / 0.0 / 0.0
+3 / 1 / 1 / 0 / 0.0 / 0.0 / 0.0
+4 / 1 / 1 / 0 / 0.0 / 0.0 / 0.0
+5 / 1 / 1 / 0 / 0.0 / 0.0 / 0.0
+
+[Member Loads]
+1 / 1 / Temperature / 0.0 / 50.0
+2 / 2 / Temperature / 0.0 / 50.0
+3 / 3 / Temperature / 50.0 / 50.0
+4 / 4 / Temperature / 50.0 / 50.0

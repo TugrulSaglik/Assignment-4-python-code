@@ -1,0 +1,51 @@
+=== STRUCTURAL ANALYSIS REPORT ===
+
+--- EQUATION NUMBERING ---
+Node  1 | DX:  0 | DY:  0 | RZ:  1
+Node  2 | DX:  2 | DY:  3 | RZ:  4
+Node  3 | DX:  5 | DY:  6 | RZ:  7
+Node  4 | DX:  8 | DY:  9 | RZ: 10
+Node  5 | DX:  0 | DY:  0 | RZ: 11
+Node  6 | DX:  0 | DY:  0 | RZ:  0
+
+Total Equations: 11
+
+--- STRUCTURAL DISPLACEMENTS ---
+Eq  1:  -6.6075e-04
+Eq  2:   3.5907e-06
+Eq  3:  -1.9937e-03
+Eq  4:  -1.7381e-04
+Eq  5:   5.3686e-06
+Eq  6:  -9.5687e-04
+Eq  7:   2.8132e-04
+Eq  8:   5.3686e-06
+Eq  9:  -1.1291e-04
+Eq 10:   2.8132e-04
+Eq 11:   8.5559e-05
+
+--- MEMBER END FORCES (Local) ---
+
+Member 1:
+  Start -> Axial:    -6.73, Shear:     9.51, Moment:    -0.00
+  End   -> Axial:     6.73, Shear:    -9.51, Moment:    38.04
+
+Member 2:
+  Start -> Axial:    -1.67, Shear:    -2.22, Moment:   -17.78
+  End   -> Axial:     1.67, Shear:     2.22, Moment:    -0.00
+
+Member 3:
+  Start -> Axial:    -0.00, Shear:     0.00, Moment:     0.00
+  End   -> Axial:     0.00, Shear:    -0.00, Moment:     0.00
+
+Member 4:
+  Start -> Axial:   -11.73, Shear:    -5.07, Moment:     0.00
+  End   -> Axial:    11.73, Shear:     5.07, Moment:   -20.26
+
+Member 5:
+  Start -> Axial:     2.78, Shear:     0.00, Moment:     0.00
+  End   -> Axial:    -2.78, Shear:     0.00, Moment:     0.00
+
+--- SUPPORT REACTIONS (Global) ---
+Node  1 | Fx:    -6.73 | Fy:     9.51 | Mz:     0.00
+Node  5 | Fx:     5.07 | Fy:   -11.73 | Mz:     0.00
+Node  6 | Fx:     1.67 | Fy:     2.22 | Mz:     0.00
